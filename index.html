@@ -14,7 +14,7 @@
     <div id="app-wrapper">
 
         <!-- MAIN -->
-        <main>
+        <main class="clearfix">
             
             <!-- Nav -->
             <nav>
@@ -63,7 +63,7 @@
                         </div>
 
                         <!-- List Playlist -->
-                        <ul class="list-playlist block-pad">
+                        <ul class="list-playlist">
                             <li>
                                 <a href="#">Rock</a> 
                             </li>
@@ -100,8 +100,16 @@
 
                         <!-- Download App -->
                         <div class="app-download">
-                            <span class="download"><i class="fas fa-long-arrow-alt-down"></i></span> Installa App
+                            <a href="#" class="download"><i class="fas fa-long-arrow-alt-down"></i></a>
+                            <a href="#">Installa app</a>
                         </div>
+
+                        <!-- Account -->
+                        <div class="account-profile block-pad">
+                            <img src="img/profile.svg" alt="profile">
+                            <span>Hollywood</span>
+                        </div>
+
                     </div>
                     <!-- End Account -->
 
@@ -111,21 +119,128 @@
 
             <!-- Main Content -->
             <div class="main-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero, optio quam delectus dolor autem corporis velit amet reiciendis consequatur esse totam, recusandae pariatur! Voluptates eum adipisci et numquam saepe.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero, optio quam delectus dolor autem corporis velit amet reiciendis consequatur esse totam, recusandae pariatur! Voluptates eum adipisci et numquam saepe.
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero, optio quam delectus dolor autem corporis velit amet reiciendis consequatur esse totam, recusandae pariatur! Voluptates eum adipisci et numquam saepe.
+                <!-- Music Menu -->
+                <div class="music-menu align-center">
+                    <ul>
+                        <li>
+                            <a class="text-uppercase" href="#">in evidenza</a>
+                        </li>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero, optio quam delectus dolor autem corporis velit amet reiciendis consequatur esse totam, recusandae pariatur! Voluptates eum adipisci et numquam saepe.
+                        <li>
+                            <a class="text-uppercase" href="#">podcast</a>
+                        </li>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero, optio quam delectus dolor autem corporis velit amet reiciendis consequatur esse totam, recusandae pariatur! Voluptates eum adipisci et numquam saepe.
+                        <li>
+                            <a class="text-uppercase" href="#">classifiche</a>
+                        </li>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero, optio quam delectus dolor autem corporis velit amet reiciendis consequatur esse totam, recusandae pariatur! Voluptates eum adipisci et numquam saepe.
+                        <li>
+                            <a class="text-uppercase" href="#">generi e mood</a>
+                        </li>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero, optio quam delectus dolor autem corporis velit amet reiciendis consequatur esse totam, recusandae pariatur! Voluptates eum adipisci et numquam saepe.
+                        <li >
+                            <a class="text-uppercase" href="#">nuove uscite</a>
+                        </li>
 
+                        <li>
+                            <a class="text-uppercase" href="#">scopri</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Recently Played -->
+                <div class="recently-played block-pad-around">
+                    <h2 class="title-list block-pad">Recently Played</h2>
+
+                    <div class="flex">
+                        <!-- Start Box -->
+                        <div class="box">
+                            <div class="gutter">
+                                <div class="box-content align-center">
+                                    <div class="image-box">
+                                        <img src="img/metal_lifting.jpg" alt="metal">
+                                    </div>
+                                    <h4 class="block-pad">Heavy Metal</h4>
+                                    <span class="subtitle">Subtitle</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Box -->
+
+                        <!-- Start Box -->
+                        <div class="box">
+                            <div class="gutter">
+                                <div class="box-content align-center">
+                                    <div class="image-box">
+                                        <img src="img/stranger.jpeg" alt="stranger things">
+                                    </div>
+                                    <h4 class="block-pad">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                    <span class="subtitle">Kyle Dixon & Michael Stein</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Box -->
+
+                        <!-- Start Box -->
+                        <div class="box">
+                            <div class="gutter">
+                                <div class="box-content align-center">
+                                    <div class="image-box">
+                                        <img src="img/aquietplace.jpeg" alt="quiet place">
+                                    </div>
+                                    <h4 class="block-pad">A quiet place</h4>
+                                    <span class="subtitle">Subtitle</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Box -->
+
+                        <!-- Start Box -->
+                        <div class="box">
+                            <div class="gutter">
+                                <div class="box-content align-center">
+                                    <div class="image-box">
+                                        <img src="img/split.jpeg" alt="split">
+                                    </div>
+                                    <h4 class="block-pad">Split</h4>
+                                    <span class="subtitle">Subtitle</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Box -->
+
+                        <!-- Start Box -->
+                        <div class="box">
+                            <div class="gutter">
+                                <div class="box-content align-center">
+                                    <div class="image-box">
+                                        <img src="img/cure.jpeg" alt="cure">
+                                    </div>
+                                    <h4 class="block-pad">A cure for wellness</h4>
+                                    <span class="subtitle">Subtitle</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Box -->
+
+                        <!-- Start Box -->
+                        <div class="box">
+                            <div class="gutter">
+                                <div class="box-content align-center">
+                                    <div class="image-box">
+                                        <img src="img/sinister.jpeg" alt="sinister">
+                                    </div>
+                                    <h4 class="block-pad">Sinister</h4>
+                                    <span class="subtitle">Subtitle</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Box -->
+
+                    </div>
             </div>
-            <!-- Main Content -->
+            <!-- End Main Content -->
         </main>
         <!-- END MAIN -->
 
