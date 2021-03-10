@@ -49,6 +49,28 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0;
 }
 
+.image-box {
+    position: relative;
+}
+
+/* Layover */
+.layover {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.play {
+    vertical-align: middle;
+}
 /* Add Button */
 .add-button {
     height: 30px;
@@ -83,6 +105,10 @@ a:hover {
 
 .nav-content .main-links .main-link-lists li img:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+.image-box:hover .layover {
+    display: flex;
 }
 
 /* Padding */
