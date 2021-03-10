@@ -1,0 +1,185 @@
+/* RESET */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+img {
+    width: 100%;
+}
+
+#app-wrapper {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.text-white {
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+.add-button {
+    height: 30px;
+    width: 30px;
+    color: black;
+    background-color: grey;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+/* Hover */
+a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav-content .main-links .main-link-lists li img:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Padding */
+.block-pad {
+    padding: 20px 0;
+}
+
+.block-pad-around {
+    padding: 20px;
+}
+.flex {
+    display: flex;
+}
+
+/* Align */
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+/* MAIN */
+main {
+    height: calc( 100% - 100px );
+    width: 100%;
+
+}
+
+/* Nav */
+nav {
+    float: left;
+    width: 220px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.nav-content {
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo-small {
+    display: none;
+}
+
+.logo img {
+   width: 150px;
+}
+
+.nav-content .main-links .main-link-lists li img {
+    width: 30px;
+    height: auto;  
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+.link-name {
+    font-size: 12px;
+}
+
+/* Main Content */
+.main-content {
+    float: left;
+    width: calc( 100% - 220px );
+    height: 100%;
+    overflow-y: auto;
+    background-color: #141922;
+}
+
+/* Playlist */
+.playlist {
+    height: 100%;
+}
+
+/* Button */
+.playlist button {
+    background-color: black;
+    border: 0;
+}
+
+.playlist button .add-button {
+    height: 30px;
+    width: 30px;
+    color: black;
+    background-color: grey;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+}
+
+.playlist button span {
+    padding: 0 5px;
+}
+
+/* Playlist List */
+.list-playlist {
+    min-height: 100px;
+    height: 100%;
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.playlist .list-playlist li a {
+    padding: 5px 0;
+    display: block;
+}
+
+
+/* FOOTER */
+footer {
+    height: 100px;
+    overflow: hidden;
+    background-color: #000000;
+}
