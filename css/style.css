@@ -45,8 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Box */
 .box {
-    width: calc( ( 100% / 6 ) - 15px);
-    display: inline-block;
+    width: calc( 100% / 6 );
     padding: 20px 0;
 }
 
@@ -233,6 +232,7 @@ nav {
     height: 100%;
     overflow-y: auto;
     background-color: #141922;
+    padding-top: 90px;
 }
 
 .main-content img {
@@ -244,7 +244,17 @@ nav {
     padding: 10px ;
 }
 
+.content-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+
+/* Popular */
+.main-content .popular .image-box  {
+    border-radius: 50%;
+    overflow: hidden;
+}
 /* FOOTER */
 footer {
     height: 100px;
