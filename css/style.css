@@ -8,14 +8,32 @@ box-sizing: border-box;
 /* COMMON */
 body {
     color: rgba(255, 255, 255, 0.6);
+    min-height: 250px;
 }
 
 #app-wrapper {
     height: 100vh;
     width: 100%;
-    min-height: 230px;
+    min-height: 250px;
 }
 
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+*::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 20px;
+    border: 3px solid #fff;  
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+  
 /* Gutter */
 .gutter {
     padding: 0 15px;
@@ -72,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 .play {
     vertical-align: middle;
 }
+
 /* Add Button */
 .add-button {
     height: 30px;
@@ -112,20 +131,46 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
+/* Nav Hover */
 .nav-content .main-links .main-link-lists li img:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+.nav-content .playlist button .add-button:hover {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .image-box:hover .layover {
     display: flex;
 }
 
+/* Main Content Hover */
+
+/* Footer Hover */
 footer .play-buttons button:hover {
     color: rgba(255, 255, 255, 1);
 }
 
 footer .settings button:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+footer .settings .settings-icon button:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .listening .like-and-folder .like:hover {
+   color: red;   
+}
+
+footer .listening .like-and-folder .folder:hover {
+    color: #eedaab;   
+ }
+
+.fixed-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    
 }
 
 /* Padding */
@@ -171,6 +216,7 @@ nav {
 
 .logo-small {
     display: none;
+    width: 30px;
 }
 
 .logo img {
@@ -227,7 +273,6 @@ nav {
     overflow-y: auto;
 }
 
-
 .playlist .list-playlist li a {
     padding: 5px 0;
     display: block;
@@ -244,6 +289,10 @@ nav {
     display: inline-block;
     border: 1px solid #ffffff99;
     border-radius: 50%;
+}
+
+.account.flex {
+    flex-direction: column;
 }
 
 .account .app-download::after {
@@ -286,6 +335,14 @@ nav {
     padding: 10px;
 }
 
+.main-content .music-menu ul li:first-child:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid limegreen;
+    width: 50%;
+    margin: 10px 25%;
+}
+
 .content-container {
     justify-content: space-around;
     flex-wrap: wrap;
@@ -297,6 +354,7 @@ nav {
     border-radius: 50%;
     overflow: hidden;
 }
+
 /* FOOTER */
 footer {
     height: 100px;
@@ -307,12 +365,14 @@ footer {
 
 footer .flex{
     align-items: center;
-    justify-content: space-between;
 }
 
-.listening .flex {
-    align-items: center;
+footer .listening, 
+footer .play-buttons, 
+footer .settings {
+    width: calc( 100% / 3 );
 }
+
 
 /* Listening */
 footer .listening .song-image img {
@@ -323,11 +383,15 @@ footer .listening .song-title p {
     font-size: 12px;
 }
 
-footer .listening .like-and-save .like {
+footer .listening .like-and-folder .like {
     padding: 0 10px;
 }
 
 /* Play Buttons */
+footer .play-buttons .flex {
+    justify-content: center;
+}
+
 footer .play-buttons button {
     margin: 0 10px;
     vertical-align: middle;
@@ -341,7 +405,6 @@ footer .play-buttons .play {
     font-size: 35px;
     padding: 0 15px;
 }
-
 
 
 footer .play-buttons .button-side {
@@ -372,6 +435,11 @@ footer .bar .total-time {
     padding: 0 10px;
 }
 
+/* Settings */
+footer .settings .flex {
+    justify-content: flex-end;
+}
+
 footer .settings .volume-bar {
     height: 5px;
     width: 200px;
@@ -397,12 +465,103 @@ footer .settings .settings-icon button {
 }
 
 
+/* Fixed Button */
+.container-fixed-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc( 100% - 200px );
+    height: 70px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.fixed-button {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 2%;
+}
+
 /* Media Query */
 
 /* Media Queri XS */
+@media all and (max-width: 767px) {
+     /* Nav */
+    nav {
+        width: 80px;
+    }
+
+    .logo-small {
+        display: block;
+    }
+
+    .logo, 
+    .playlist,
+    .link-name,
+    .username {
+        display:none;
+    }
+
+    .account {
+        flex-grow: 1; 
+    }
+
+    .account.flex {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    /* Main Content */
+    .main-content {
+        width: calc( 100% - 80px);
+    }
+    .box {
+        width: calc( 100% / 2 );
+    }
+
+    .recently-played .flex {
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+    footer .listening .song-image img {
+        width: 50px;
+    }
+
+    /* Fixed Button */
+    .container-fixed-button {
+        width: calc( 100% - 80px );
+    }
+}
 
 /* Media Queri SM */
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .box {
+        width: calc( 100% / 2 );
+    }
 
+    .recently-played .flex {
+        flex-wrap: wrap;
+    }
+
+}
 /* Media Queri MD */
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    .box {
+        width: calc( 100% / 4 );
+    }
 
-/* Media Queri LG */
+    .recently-played .flex {
+        flex-wrap: wrap;
+    }
+}
+
+/* Media Query LG */
+@media all and (min-width: 1201px) {
+
+}
