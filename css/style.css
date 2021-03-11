@@ -13,6 +13,7 @@ body {
 #app-wrapper {
     height: 100vh;
     width: 100%;
+    min-height: 230px;
 }
 
 /* Gutter */
@@ -86,6 +87,14 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+}
+
+button {
+    transition-duration: 0.4s
+}
+
 /* Clearfix */
 .clearfix::after {
     content:"";
@@ -109,6 +118,14 @@ a:hover {
 
 .image-box:hover .layover {
     display: flex;
+}
+
+footer .play-buttons button:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .settings button:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 /* Padding */
@@ -136,7 +153,6 @@ a:hover {
 main {
     height: calc( 100% - 100px );
     width: 100%;
-
 }
 
 /* Nav */
@@ -288,3 +304,105 @@ footer {
     overflow: hidden;
     background-color: #000000;
 }
+
+footer .flex{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listening .flex {
+    align-items: center;
+}
+
+/* Listening */
+footer .listening .song-image img {
+    width: 70px;
+}
+
+footer .listening .song-title p {
+    font-size: 12px;
+}
+
+footer .listening .like-and-save .like {
+    padding: 0 10px;
+}
+
+/* Play Buttons */
+footer .play-buttons button {
+    margin: 0 10px;
+    vertical-align: middle;
+    background: none;
+    color: #ffffff99;
+    border: 0;
+    cursor: pointer;
+}
+
+footer .play-buttons .play {
+    font-size: 35px;
+    padding: 0 15px;
+}
+
+
+
+footer .play-buttons .button-side {
+    padding-bottom: 15px;
+}
+
+footer .play-buttons .static-bar {
+    height: 8px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+footer .play-buttons .progress-bar {
+    height: 100%;
+    width: 100px;
+    background-color: gray;
+}
+
+footer .bar {
+    align-items: center;
+}
+
+footer .bar .current-time,
+footer .bar .total-time {
+    font-size: 10px;
+    padding: 0 10px;
+}
+
+footer .settings .volume-bar {
+    height: 5px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+footer .settings .volume-bar .progress-bar {
+    height: 100%;
+    width: 70px;
+    background-color: gray;
+}
+
+footer .settings .settings-icon button {
+    margin: 0 10px;
+    vertical-align: middle;
+    background: none;
+    color: #ffffff99;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Media Query */
+
+/* Media Queri XS */
+
+/* Media Queri SM */
+
+/* Media Queri MD */
+
+/* Media Queri LG */
