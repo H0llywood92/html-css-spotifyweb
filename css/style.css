@@ -9,6 +9,8 @@ box-sizing: border-box;
 body {
     color: rgba(255, 255, 255, 0.6);
     min-height: 250px;
+    font-family: 'Oswald', sans-serif;
+    min-width: 500px;
 }
 
 #app-wrapper {
@@ -159,9 +161,13 @@ footer .settings .settings-icon button:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-footer .listening .like-and-folder .like:hover {
+footer .listening .like-and-folder .like:visited {
    color: red;   
 }
+
+footer .listening .like-and-folder .like:hover{
+    color: darkred;   
+ }
 
 footer .listening .like-and-folder .folder:hover {
     color: #eedaab;   
@@ -284,7 +290,7 @@ nav {
     width: 20px;
     font-size: 10px;
     text-align: center;
-    line-height: 20px;
+    line-height: 18px;
     margin-right: 5px;
     display: inline-block;
     border: 1px solid #ffffff99;
@@ -323,7 +329,11 @@ nav {
     height: 100%;
     overflow-y: auto;
     background-color: #141922;
-    padding-top: 90px;
+    padding-top: 83px;
+}
+
+.main-content .subtitle {
+    font-size: 15px;
 }
 
 .main-content img {
@@ -376,7 +386,7 @@ footer .settings {
 
 /* Listening */
 footer .listening .song-image img {
-    width: 70px;
+    width: 60px;
 }
 
 footer .listening .song-title p {
@@ -408,7 +418,7 @@ footer .play-buttons .play {
 
 
 footer .play-buttons .button-side {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 footer .play-buttons .static-bar {
@@ -450,7 +460,7 @@ footer .settings .volume-bar {
 
 footer .settings .volume-bar .progress-bar {
     height: 100%;
-    width: 70px;
+    width: 20%;
     background-color: gray;
 }
 
@@ -484,9 +494,45 @@ footer .settings .settings-icon button {
     border-radius: 20px;
     padding: 10px 20px;
     margin-right: 2%;
+    cursor: pointer;
 }
 
 /* Media Query */
+
+@media all and (min-width: 500px) and (max-width: 600px) {
+    footer .settings .settings-icon button {
+        margin: 0 5px;
+    }
+
+    footer .settings .volume-bar {
+        width: 50px;
+    }
+
+    footer .listening .song-title {
+        padding: 0 8px;
+    }
+
+    footer .listening .song-title h5 {
+        font-size: 12px;
+    } 
+
+    footer .listening .song-title p {
+        font-size: 10px;
+    }
+
+    footer .listening .song-image img {
+        width: 40px;
+    }
+
+    footer .listening .like-and-folder .like {
+        padding: 0;
+        display: block;
+    }
+
+    footer .play-buttons .play {
+        padding: 0;
+    }
+}
 
 /* Media Queri XS */
 @media all and (max-width: 767px) {
