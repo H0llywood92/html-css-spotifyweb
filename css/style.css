@@ -132,6 +132,10 @@ a:hover {
     display: flex;
 }
 
+.image-box:hover {
+    box-shadow:  1px 1px 12px rgba(255, 255, 255,  0.3);
+}
+
 /* Footer Hover */
 footer .play-buttons button:hover {
     color: rgba(255, 255, 255, 1);
@@ -139,6 +143,7 @@ footer .play-buttons button:hover {
 
 footer .play-buttons .button-section .play:hover {
     font-size: 38px;
+    color: rgba(255, 255, 255, 1);    
 }
 
 footer .settings button:hover {
@@ -193,12 +198,11 @@ footer .settings .volume-bar .progress-bar:hover:after {
 /* Focus / Visited / Active */
  footer .listening .like-and-folder .like:focus{
      color: red;   
- }
+}
  
 footer .settings .settings-icon .volume-icon:focus {
     color: red;   
- }
-
+}
 
 .fixed-button:hover {
     padding: 12px 22px;
