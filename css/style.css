@@ -137,6 +137,10 @@ footer .play-buttons button:hover {
     color: rgba(255, 255, 255, 1);
 }
 
+footer .play-buttons .button-section .play:hover {
+    font-size: 38px;
+}
+
 footer .settings button:hover {
     color: rgba(255, 255, 255, 1);
 }
@@ -182,7 +186,7 @@ footer .settings .volume-bar .progress-bar:hover:after {
     border-radius: 50%;
     position: relative;
     top: -4px;
-    right: -75%;
+    right: -78%;
 }
 
 
