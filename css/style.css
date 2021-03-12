@@ -134,7 +134,7 @@ a:hover {
 }
 
 /* Nav Hover */
-.nav-content .main-links .main-link-lists li img:hover {
+.nav-content .main-links .link-lists li img:hover {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -229,7 +229,7 @@ nav {
    width: 150px;
 }
 
-.nav-content .main-links .main-link-lists li img {
+.nav-content .main-links .link-lists li img {
     width: 30px;
     height: auto;  
     vertical-align: middle;
@@ -417,7 +417,7 @@ footer .play-buttons .play {
 }
 
 
-footer .play-buttons .button-side {
+footer .play-buttons .button-section {
     padding-bottom: 10px;
 }
 
@@ -472,6 +472,10 @@ footer .settings .settings-icon button {
     border: 0;
     cursor: pointer;
     font-size: 14px;
+}
+
+footer .settings .settings-icon .volume-icon{
+    color: #ffff;
 }
 
 
@@ -566,6 +570,7 @@ footer .settings .settings-icon button {
     .main-content {
         width: calc( 100% - 80px);
     }
+
     .box {
         width: calc( 100% / 2 );
         padding: 5px 0;
@@ -575,7 +580,6 @@ footer .settings .settings-icon button {
         flex-wrap: wrap;
     }
 
-    
     .recently-played .box-content h4.block-pad {
         padding: 5px 0;
     }

@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- APP WRAPPER -->
     <div id="app-wrapper">
 
         <!-- MAIN -->
@@ -26,6 +28,7 @@
                         <img src="img/logo.svg" alt="logo spotify">
                     </div>
                     
+                    <!-- Logo Small / visible in xs breakpoint -->
                     <div class="logo-small">
                         <img src="img/logo-small.svg" alt="logo small spotify">
                     </div>
@@ -33,7 +36,7 @@
 
                     <!-- Main Links -->
                     <div class="main-links block-pad">
-                        <ul class="main-link-lists">
+                        <ul class="link-lists">
                             <!-- Home -->
                             <li>
                                 <a href="#"><img src="img/home.svg" alt="home"> <span class="link-name text-white">Home</span></a>
@@ -48,13 +51,16 @@
                             <li>
                                 <a href="#"><img src="img/libreria.svg" alt="library"> <span class="link-name">Libreria</span></a>
                             </li>
+                            
                         </ul>
                     </div>
                     <!-- End Main Links -->
 
                     <!-- Playlist -->
                     <div class="playlist">
+
                         <h3>Playlist</h3>
+
                         <div class="playlist-create block-pad">
                             
                             <!-- Button -->
@@ -62,10 +68,12 @@
                                 <span class="add-button"><i class="fas fa-plus"></i></span>
                                 <span class="text-white">Crea Playlist</span> 
                             </button>
+
                         </div>
 
                         <!-- List Playlist -->
                         <ul class="list-playlist">
+                            
                             <li>
                                 <a href="#">Rock</a> 
                             </li>
@@ -93,7 +101,10 @@
                             <li>
                                 <a href="#">Classica</a>
                             </li>
+
                         </ul>
+                        <!-- End List Playlist -->
+
                     </div>
                     <!-- End Playlist -->
 
@@ -150,15 +161,19 @@
                         </li>
                     </ul>
                 </div>
+                <!-- End Music Menu -->
 
                 <!-- Recently Played -->
                 <div class="recently-played block-pad-around">
+
+                    <!-- List Title -->
                     <div class="gutter">
-                        <h2 class="title-list block-pad">Recently Played</h2>
+                        <h2 class="list-title block-pad">Recently Played</h2>
                     </div>
                     
-
+                    <!-- Box Content -->
                     <div class="flex">
+
                         <!-- Start Box -->
                         <div class="box">
                             <div class="gutter">
@@ -260,20 +275,27 @@
                             </div>
                         </div>
                         <!-- End Box -->
+
                     </div>
+                    <!-- End Box Content -->
 
                 </div>
+                <!-- End Recently Played -->
 
                 <!-- Suggested -->
                 <div class="Suggested block-pad-around">
+                    
+                    <!-- List Title -->
                     <div class="gutter">
-                        <h2 class="title-list block-pad">Creato per te</h2>
+                        <h2 class="list-title block-pad">Creato per te</h2>
 
                         <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
     
                     </div>
 
+                    <!-- Box Content -->
                     <div class="flex">
+                        
                         <!-- Start Box -->
                         <div class="box">
                             <div class="gutter">
@@ -307,18 +329,23 @@
                         <!-- End Box -->
 
                     </div>
+                    <!-- End Box Content -->
 
                 </div>
+                <!-- End Suggested -->
 
                 <!-- Popular -->
                 <div class="popular block-pad-around">
+
+                    <!-- List Title -->
                     <div class="gutter">
-                        <h2 class="title-list block-pad">Artisti più popolari</h2>
+                        <h2 class="list-title block-pad">Artisti più popolari</h2>
 
                         <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
     
                     </div>
 
+                    <!-- Box Content -->
                     <div class="flex">
                         <!-- Start Box -->
                         <div class="box">
@@ -353,33 +380,56 @@
                         <!-- End Box -->
 
                     </div>
+                    <!-- End Box Content -->
 
                 </div>
+                <!--End  Popular -->
+
             </div>
             <!-- End Main Content -->
+
         </main>
         <!-- END MAIN -->
 
         <!-- FOOTER -->
         <footer class="block-pad-around">
+
             <div class="flex">
+
+                <!-- Listening -->
                 <div class="listening">
-                   <div class="flex">
+
+                    <div class="flex">
+
+                       <!-- Song Image -->
                         <div class="song-image">
                             <img src="img/sinister.jpeg" alt="sinister">
                         </div>
+                        <!-- End Song Image -->
+
+                        <!-- Song Title / Like & Folder -->
                         <div class="song-title gutter">
                             <h5>Sinister</h5>
                             <p>Brano Nome</p>
                         </div>
+
+                        <!-- Like & folder -->
                         <div class="like-and-folder">
                             <a href="#" class="like"><i class="fas fa-heart"></i></a>
                             <a href="#" class="folder"><i class="far fa-folder"></i></a >
                         </div>
-                   </div>
+                        <!-- End Song Title / Like & Folder  -->
+
+                    </div>
+
                 </div>
+                <!-- End Listening -->
+
+                <!-- Play Buttons -->
                 <div class="play-buttons">
-                    <div class="button-side">
+
+                    <!-- Button Section -->
+                    <div class="button-section">
                         <div class="flex">
                             <button><i class="fas fa-random"></i></button>
                             <button><i class="fas fa-step-backward"></i></button>
@@ -388,30 +438,53 @@
                             <button><i class="fas fa-redo-alt"></i></button>    
                         </div>
                     </div>
+                    <!-- End Button Section -->
+
+                    <!-- Bar -->
                     <div class="bar flex">
-                        <div class="current-time text-white">0.25</div>
+                        <div class="current-time text-white">0:25</div>
                         <div class="static-bar">
                             <div class="progress-bar"></div>
                         </div>
-                        <div class="total-time text-white">4.35</div>
+                        <div class="total-time text-white">4:35</div>
                     </div>
+                    <!-- End Bar -->
+
                 </div>
+                <!-- End Play Buttons -->
+
+                <!-- Settings -->
                 <div class="settings">
                     <div class="flex">
+
+                        <!-- Settings Icon -->
                         <div class="settings-icon">
                             <div class="flex">
+                                <!-- List -->
                                 <button><i class="fas fa-list-ul"></i></button> 
+
+                                <!-- Desktop -->
                                 <button><i class="fas fa-desktop"></i></button>
-                                <button><i class="fas fa-volume-up"></i></button>    
+
+                                <!-- Volume -->
+                                <button class="volume-icon"><i class="fas fa-volume-up"></i></button>  
+                                  
                             </div>
                         </div>
+                        <!-- Settings Icon -->
+
+                        <!-- Volume Bar -->
                         <div class="volume-bar">
                             <div class="progress-bar"></div>
                         </div>
+                        <!-- End Volume Bar -->
                     </div>
                     
                 </div>
+                <!-- End Settings -->
+
             </div>
+
         </footer>
         <!-- END FOOTER -->
 
@@ -419,8 +492,10 @@
         <div class="container-fixed-button block-pad flex">
             <button class="fixed-button text-uppercase">Effettua l'upgrade</button>
         </div>
+        <!-- End Fixed button -->
+
     </div>
-    
-    
+    <!-- END APP WRAPPER -->
+
 </body>
 </html>
