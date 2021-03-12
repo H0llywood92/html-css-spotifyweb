@@ -19,12 +19,26 @@ body {
     min-height: 250px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
 /* Scrollbar */
 *::-webkit-scrollbar {
     width: 10px;
 }
   
-  /* Track */
+
 *::-webkit-scrollbar-track {
     background: #fff;
     border-radius: 20px;
@@ -48,20 +62,6 @@ body {
 
 .text-uppercase {
     text-transform: uppercase;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: white;
 }
 
 /* Box */
@@ -93,21 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 }
 
-/* Add Button */
-.add-button {
-    height: 30px;
-    width: 30px;
-    color: black;
-    background-color: #ffffff99;
-    font-size: 18px;
-    text-align: center;
-    line-height: 30px;
-    vertical-align: middle;
-    margin-right: 5px;
-    border: 0;
-    cursor: pointer;
-}
-
+/*  Button */
 button:focus {
     outline: none;
 }
@@ -146,8 +132,6 @@ a:hover {
     display: flex;
 }
 
-/* Main Content Hover */
-
 /* Footer Hover */
 footer .play-buttons button:hover {
     color: rgba(255, 255, 255, 1);
@@ -167,16 +151,15 @@ footer .listening .like-and-folder .like:visited {
 
 footer .listening .like-and-folder .like:hover{
     color: darkred;   
- }
+}
 
 footer .listening .like-and-folder .folder:hover {
     color: #eedaab;   
- }
+}
 
 .fixed-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.8);
-    
+    color: rgba(255, 255, 255, 0.8);  
 }
 
 /* Padding */
@@ -193,13 +176,10 @@ footer .listening .like-and-folder .folder:hover {
     text-align: center;
 }
 
-.align-left {
-    text-align: left;
-}
-
 .align-right {
     text-align: right;
 }
+
 /* MAIN */
 main {
     height: calc( 100% - 100px );
@@ -220,6 +200,7 @@ nav {
     height: 100%;
 }
 
+/* Logo */
 .logo-small {
     display: none;
     width: 30px;
@@ -229,6 +210,7 @@ nav {
    width: 150px;
 }
 
+/* Main Links */
 .nav-content .main-links .link-lists li img {
     width: 30px;
     height: auto;  
@@ -250,6 +232,20 @@ nav {
 }
 
 /* Button */
+.add-button {
+    height: 30px;
+    width: 30px;
+    color: black;
+    background-color: #ffffff99;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
 .playlist button {
     background-color: black;
     border: 0;
@@ -285,6 +281,7 @@ nav {
 }
 
 /* Account */
+/* Download Icon */
 .account .download {
     height: 20px;
     width: 20px;
@@ -301,7 +298,7 @@ nav {
     flex-direction: column;
 }
 
-.account .app-download::after {
+.account .download-icon::after {
     content: "";
     border-bottom: 1px solid #ffffff99;
     width: 100%;
@@ -309,6 +306,7 @@ nav {
     padding: 10px 0px;
 }
 
+/* Account Profile */
 .account-profile img {
     height: 30px;
     width: 30px;
@@ -340,6 +338,7 @@ nav {
     width: 100%;
 }
 
+/* Music Menu */
 .main-content .music-menu ul li {
     display: inline-block;
     padding: 10px;
@@ -352,12 +351,6 @@ nav {
     width: 50%;
     margin: 10px 25%;
 }
-
-.content-container {
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 
 /* Popular */
 .main-content .popular .image-box  {
@@ -377,6 +370,7 @@ footer .flex{
     align-items: center;
 }
 
+/* Footer Col */
 footer .listening, 
 footer .play-buttons, 
 footer .settings {
