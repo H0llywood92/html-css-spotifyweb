@@ -458,14 +458,14 @@ footer .play-buttons button {
 
 footer .play-buttons .play {
     font-size: 35px;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 
 footer .play-buttons .button-section {
     padding-bottom: 10px;
 }
-footer .play-buttons .button-section .flex {
+footer .play-buttons .button-section .button-content {
     height: 40px;
 }
 
